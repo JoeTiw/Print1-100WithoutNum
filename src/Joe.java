@@ -4,33 +4,22 @@ import java.util.Scanner;
 
 public class Joe {
     public static void main(String[] args) {
-        Random rand = new Random();
-        Scanner userInputReader = new Scanner(System.in);
 
-        //rock paper scissor
-        int rock = 0;
-        int paper = 1;
-        int scissor = 2;
 
-        System.out.println("Enter 0 for ROCK or 1 for PAPER or 2 for Scissor");      //Ask player to choose a number
+        //--------------------Print 1-100 without using any number in java---------//
 
-        int inputfromuser =  userInputReader.nextInt();  //take input from the user and store  it in result
 
-        int result = inputfromuser ;
-        int randNum  = (int) (Math.random() * 3);    //computer chooses a random number from 0-3
+      String s = "**********"; //10 length String
+      int a = 'B'/'B'; // 'B'/'B' = 1
 
-        if (result == rock && randNum==rock || result == paper && randNum == paper || result == scissor && randNum == scissor ){
+      for (int i = a; i <= s.length()*s.length(); i++ ){     //multiply the length by itself to print to 100 :)
+          System.out.println(i);
+      }
 
-            System.out.println("you tie");
 
-            } else if (result == rock && randNum==scissor || result == paper && randNum== rock || result == scissor && randNum == paper){
 
-            System.out.println("you win");
 
-        }else{
 
-            System.out.println("Computer wins");
-            }
         }
     }
 
